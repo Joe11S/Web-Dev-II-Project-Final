@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Great Recipes</title>
-    </head>
-    <body>
-        <header>
-            <h1 class="logo">Great, Tasty Recipes</h1>
-        </header>
-        <main class="login-panel">
-            <h1>Login</h1>
-            
-            <form action="/submit-login" method="post">
-                <label for="username">Username/Email:</label>
-                <input type="text" id="username" name="username" required><br><br>
-                
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required><br><br>
-                
-                <input type="submit" value="Log In">
-            </form>
-            <script>
-
-            </script>
-        </main>
-    </body>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Login - Great Tasty Recipes</title>
+</head>
+<body style="overflow: hidden;">
+    <div class="login-split">
+        <div class="welcome-side">
+            <h1>Welcome!</h1>
+            <p>Welcome back to the family! Sign in to continue!</p>
+            <a href="#" class="bottom-link">Don't have an account? Create one!</a>
+        </div>
+        <div class="form-side">
+            <div class="form-container">
+                <h2>Sign in to Great, Tasty Recipes!</h2>
+                <div class="input-row">
+                    <label>Email</label>
+                    <input type="email">
+                </div>
+                <div class="input-row">
+                    <label>Password</label>
+                    <input type="password">
+                </div>
+                <div class="social-signin">
+                    <p>Sign in with...</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

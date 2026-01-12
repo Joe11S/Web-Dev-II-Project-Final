@@ -1,57 +1,58 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <title>Great, Tasty Recipes</title>
-    </head>
-    <body>
-        <header>
-            <h1 class="logo">Great, Tasty Recipes</h1>
-            <nav>
-                <a href="">All</a>
-                <a href="">Breakfast</a>
-                <a href="">Dinner</a>
-                <a href="">Pastries</a>
-                <a href="">Confectionery</a>
-                <a href="">Drinks</a>
-            </nav>
-            <a class="login" href="login.html">Login</a>
-        </header>
-        <main>
-            <aside>
-                
-            </aside>
-            <article>
-                <header>
-                    <h1 class="heading">About Us</h1> 
-                </header>
-                <section id="sector">
-                    <h2 id="section1">First Section</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquet turpis semper nulla hendrerit, at consectetur est rhoncus. Nullam quis augue nec urna malesuada euismod. Praesent vestibulum eget nibh sed ultricies. Donec volutpat dolor quis ante consectetur convallis. Proin at suscipit nunc, et finibus nulla. Donec placerat turpis sit amet ante vulputate, nec bibendum sapien condimentum. Nullam elementum turpis sit amet nulla faucibus elementum. Sed egestas, nulla eget condimentum vulputate, quam sapien aliquam libero, quis suscipit massa nibh sed sem. Suspendisse vitae metus in dui bibendum elementum. Nam volutpat dolor eu aliquam posuere.
-                    </p>
-                    <p>
-                        Integer id enim fringilla, maximus massa nec, vehicula odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In euismod tellus risus, sed consectetur felis hendrerit vel. Cras tristique odio eget lorem hendrerit, a tempus orci molestie. Nulla bibendum viverra finibus. Proin tempor tempus turpis, vel interdum dui commodo sit amet. Etiam efficitur turpis at rutrum auctor. Ut eu tellus et purus ultrices vulputate.
-                    </p>
-                </section>
-                <section id="sector2">
-                    <h2 id="section2">Second Section</h2>
-                    <p>
-                        Suspendisse fermentum dui eu arcu malesuada laoreet. Nulla sagittis rutrum arcu et dignissim. Curabitur nec quam eu arcu blandit dapibus sed non metus. Phasellus vestibulum libero vitae luctus pulvinar. Nunc metus orci, sollicitudin non tortor eget, dapibus porttitor ex. Nunc ultrices, lacus id finibus ultricies, mauris augue lacinia ex, sit amet scelerisque leo metus lobortis enim. Fusce viverra volutpat dapibus. Phasellus arcu diam, blandit at est id, ultricies condimentum orci. Vestibulum porta dolor et sem molestie pulvinar eget et nisl. Phasellus libero velit, interdum et urna vitae, sagittis molestie mi.
-                    </p>
-                    <p>
-                        Integer vel condimentum ipsum, ut ultricies ipsum. Vestibulum eleifend mi tempor, volutpat ligula ut, consequat turpis. Integer tincidunt risus mi. In hac habitasse platea dictumst. Sed eu neque congue, vulputate magna eu, euismod ante. Aenean a lectus eu elit placerat tempor et nec elit. Curabitur sed lacinia ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec lacinia nunc leo, quis vulputate enim sagittis et.
-                    </p>
-                    <p>
-                        Donec laoreet orci a ligula fringilla, et sollicitudin sem mattis. Integer a finibus libero, id commodo mauris. Praesent nec maximus nibh, at elementum nunc. Proin non elementum sapien. Mauris auctor sapien suscipit rhoncus aliquet. Suspendisse vel pulvinar ipsum. Nullam et dui sem.
-                    </p>
-                    <a href="http://youtube.com">YouTube</a>
-                </section>
-            </article>
-        </main>
-        <footer>
-            <p>Lorem ipsum dolor sit amet</p>
-            <div class="footer-div-container"></div>
-        </footer>
-    </body>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Home - Great Tasty Recipes</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Great, Tasty Recipes</div>
+        <div class="user-section" id="userBtn">
+            <span>User</span>
+            <div class="avatar"></div>
+            <div class="dropdown" id="userDropdown">
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1>Daily Picks</h1>
+        <section class="daily-picks">
+            <div class="recipe-card">
+                <div class="img-placeholder"></div>
+                <h3>A Chocolate Cake, in an hour!</h3>
+                <div class="card-footer">
+                    <span>By Jane</span>
+                    <span>Tags: Dessert</span>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <div class="img-placeholder"></div>
+                <h3>This Brownie Recipe will make your mouth water!</h3>
+                <div class="card-footer">
+                    <span>By Marcus</span>
+                    <span>Tags: Dessert</span>
+                </div>
+            </div>
+        </section>
+
+        <h1 style="margin-top: 60px;">Get Started with Baking!</h1>
+        <h1 style="margin-top: 100px;">By Category</h1>
+    </main>
+
+    <footer>
+        <div class="newsletter">
+            <span>Newsletter</span>
+            <input type="text">
+        </div>
+        <p class="copy">Copyright © 2026. Great Tasty Recipes. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const userBtn = document.getElementById('userBtn');
+        const dropdown = document.getElementById('userDropdown');
+        userBtn.onclick = () => dropdown.classList.toggle('active');
+    </script>
+</body>
 </html>
